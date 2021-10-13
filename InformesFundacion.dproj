@@ -1,0 +1,172 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{f2ba4c27-8ee6-4749-81de-bc44d05a2c37}</ProjectGuid>
+    <MainSource>InformesFundacion.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>InformesFundacion.exe</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Define>DEBUG</DCC_Define>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject xmlns=""> <Delphi.Personality>   <Parameters>
+      <Parameters Name="UseLauncher">False</Parameters>
+      <Parameters Name="LoadAllSymbols">True</Parameters>
+      <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+    </Parameters>
+    <VersionInfo>
+      <VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+      <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+      <VersionInfo Name="MajorVer">1</VersionInfo>
+      <VersionInfo Name="MinorVer">0</VersionInfo>
+      <VersionInfo Name="Release">0</VersionInfo>
+      <VersionInfo Name="Build">0</VersionInfo>
+      <VersionInfo Name="Debug">False</VersionInfo>
+      <VersionInfo Name="PreRelease">False</VersionInfo>
+      <VersionInfo Name="Special">False</VersionInfo>
+      <VersionInfo Name="Private">False</VersionInfo>
+      <VersionInfo Name="DLL">False</VersionInfo>
+      <VersionInfo Name="Locale">3082</VersionInfo>
+      <VersionInfo Name="CodePage">1252</VersionInfo>
+    </VersionInfo>
+    <VersionInfoKeys>
+      <VersionInfoKeys Name="CompanyName"></VersionInfoKeys>
+      <VersionInfoKeys Name="FileDescription"></VersionInfoKeys>
+      <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+      <VersionInfoKeys Name="InternalName"></VersionInfoKeys>
+      <VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys>
+      <VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys>
+      <VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys>
+      <VersionInfoKeys Name="ProductName"></VersionInfoKeys>
+      <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+      <VersionInfoKeys Name="Comments"></VersionInfoKeys>
+    </VersionInfoKeys>
+    <Source>
+      <Source Name="MainSource">InformesFundacion.dpr</Source>
+    </Source>
+  </Delphi.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <ItemGroup />
+  <ItemGroup>
+    <DelphiCompile Include="InformesFundacion.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="Code\UCodigoComun.pas" />
+    <DCCReference Include="Data\ExpedienteDM.pas">
+      <Form>DMExpediente</Form>
+      <DesignClass>TDataModule</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Data\UDMActas.pas">
+      <Form>DMActas</Form>
+      <DesignClass>TDataModule</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Data\UDMMain.pas">
+      <Form>DMMain</Form>
+      <DesignClass>TDataModule</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Data\UDMResultados.pas">
+      <Form>DMResultados</Form>
+      <DesignClass>TDataModule</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Forms\ExpedienteF.pas">
+      <Form>FExpediente</Form>
+    </DCCReference>
+    <DCCReference Include="Forms\UFNotas.pas">
+      <Form>FNotas</Form>
+    </DCCReference>
+    <DCCReference Include="Forms\UMain.pas">
+      <Form>FMain</Form>
+    </DCCReference>
+    <DCCReference Include="Reports\Acta2015QR.pas">
+      <Form>QRActa2015</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Reports\ActaConCV2015QR.pas">
+      <Form>QRActaConCV2015</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Reports\ExpedienteCuartoQR.pas">
+      <Form>QRExpedienteCuarto</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Reports\ExpedientePortada1QR.pas">
+      <Form>QRExpedientePortada1</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Reports\ExpedientePortada2QR.pas">
+      <Form>QRExpedientePortada2</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Reports\ExpedientePrimeroQR.pas">
+      <Form>QRExpedientePrimero</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Reports\ExpedienteQuintoQR.pas">
+      <Form>QRExpedienteQuinto</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Reports\ExpedienteSegundoQR.pas">
+      <Form>QRExpedienteSegundo</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Reports\ExpedienteSextoQR.pas">
+      <Form>QRExpedienteSexto</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Reports\ExpedienteTerceroQR.pas">
+      <Form>QRExpedienteTercero</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Reports\HistorialCuartoQR.pas">
+      <Form>QRHistorialCuarto</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Reports\HistorialPortada1QR.pas">
+      <Form>QRHistorialPortada1</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Reports\HistorialPortada2QR.pas">
+      <Form>QRHistorialPortada2</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Reports\HistorialPrimeroQR.pas">
+      <Form>QRHistorialPrimero</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Reports\HistorialQuintoQR.pas">
+      <Form>QRHistorialQuinto</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Reports\HistorialSegundoQR.pas">
+      <Form>QRHistorialSegundo</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Reports\HistorialSextoQR.pas">
+      <Form>QRHistorialSexto</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Reports\HistorialTerceroQR.pas">
+      <Form>QRHistorialTercero</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Reports\ResultadosQR.pas">
+      <Form>QRResultados</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <None Include="InformesFundacion.todo" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+</Project>
